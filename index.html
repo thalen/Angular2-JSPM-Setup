@@ -1,14 +1,16 @@
 <!doctype html>
 <html>
   <head>
+    <base href="/">
     <title>My First Angular2 App</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="node_modules/angular2/bundles/angular2-polyfills.min.js"></script>
     <script src="jspm_packages/system.js"></script>
     <script src="config.js"></script>
   </head>
   <body>
     <!-- this will be our entry component for the application -->
-    <app></app>
+    <my-app></my-app>
     <script>
       var readyForMainLoad;
       if (location.origin.match(/localhost/)) {
