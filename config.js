@@ -40,8 +40,6 @@ System.config({
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
-    "rx": "npm:rx@4.0.8",
-    "rxjs": "node_modules/rxjs",
     "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.6",
     "ts": "github:frankwallis/plugin-typescript@3.0.3",
     "github:capaj/systemjs-hot-reloader@0.5.6": {
@@ -118,7 +116,7 @@ System.config({
       "es6-shim": "npm:es6-shim@0.33.13",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "reflect-metadata": "npm:reflect-metadata@0.1.2",
-//      "rxjs": "npm:rxjs@5.0.0-beta.0",
+      //"rxjs": "npm:rxjs@5.0.0-beta.0",
       "zone.js": "npm:zone.js@0.5.14"
     },
     "npm:asn1.js@4.4.0": {
