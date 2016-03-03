@@ -17,7 +17,7 @@ npm install
 jspm install
 npm start
 </pre>
-** Running tests:
+Running tests:
 Run unit tests through phantomjs with the following command:
 <pre>
 karma start karma.conf.js
