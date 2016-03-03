@@ -7,6 +7,10 @@ module.exports = function (config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '.',
 
+    files: [
+      'node_modules/traceur/bin/traceur-runtime.js' // Required by PhantomJS2, otherwise it shouts ReferenceError: Can't find variable: require
+    ],
+
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jspm', 'jasmine'],
@@ -15,7 +19,6 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     jspm: {
       loadFiles: [
-
         //'app/**/*.spec.ts'
         'app/hero.spec.ts'
       ],
@@ -88,12 +91,17 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS2'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true
+    singleRun: true,
+
+    phantomjsLauncher: {
+      // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
+      exitOnResourceError: true
+    }
 
   })
 }

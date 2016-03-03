@@ -1,3 +1,6 @@
+import 'zone.js';
+import 'reflect-metadata';
+
 /// <reference path="../typings/browser.d.ts" />
 import {it, describe, expect, beforeEach, inject} from 'angular2/testing';
 import {Hero} from './hero';
