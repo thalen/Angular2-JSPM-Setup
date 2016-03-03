@@ -18,39 +18,16 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     jspm: {
+      config: 'config.karma.js',
       loadFiles: [
         //'app/**/*.spec.ts'
         'app/hero.spec.ts'
       ],
-      serveFiles: [
-        'node_modules/rxjs/Subject.js',
-        'node_modules/rxjs/add/observable/fromPromise.js',
-        'node_modules/rxjs/add/operator/toPromise.js',
-        'node_modules/rxjs/Observable.js',
-        'node_modules/rxjs/Subscriber.js',
-        'node_modules/rxjs/Subscription.js',
-        'node_modules/rxjs/subject/SubjectSubscription.js',
-        'node_modules/rxjs/symbol/rxSubscriber.js',
-        'node_modules/rxjs/operator/toPromise.js',
-        'node_modules/rxjs/observable/fromPromise.js',
-        'node_modules/rxjs/util/root.js',
-        'node_modules/rxjs/util/SymbolShim.js',
-        'node_modules/rxjs/util/noop.js',
-        'node_modules/rxjs/util/throwError.js',
-        'node_modules/rxjs/util/tryOrOnError.js',
-        'node_modules/rxjs/scheduler/queue.js',
-        'node_modules/rxjs/scheduler/QueueScheduler.js',
-        'node_modules/rxjs/scheduler/FutureAction.js',
-        'node_modules/rxjs/scheduler/QueueAction.js',
+      serveFiles: [        
         'app/**/*!(*.spec).ts',
         'typings/**/*.*',
         'tsconfig.json'
-      ]/*
-      paths: {
-        "rxjs/observable/*": "../node_modules/rxjs/add/observable/*.js",
-        "rxjs/operator/*": "../node_modules/rxjs/add/operator/*.js",
-        "rxjs/*": "../node_modules/rxjs/*.js"
-      }*/
+      ]
     },
 
     // preprocess matching files before serving them to the browser
