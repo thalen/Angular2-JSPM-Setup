@@ -8,7 +8,20 @@ First setup project:
 <pre>
 npm run setup
 </pre>
-Then the backend service in a separate process:
+Because of a dependency problem with angular2-beta and rxjs, you must manually remove some entries from config.js: <br><br>
+<ol>
+  <li>
+    Open the file config.js in the root folder
+  </li>
+  <li>
+    Under the map section, remove all entries of "rxjs"
+  </li>
+  <li>
+    Save and close the file.
+  </li>
+</ol>
+
+Now start the backend service in a separate process:
 <pre>
 npm run api
 </pre>
