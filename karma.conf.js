@@ -23,7 +23,7 @@ module.exports = function (config) {
         //'app/**/*.spec.ts'
         'app/hero.spec.ts'
       ],
-      serveFiles: [        
+      serveFiles: [
         'app/**/*!(*.spec).ts',
         'typings/**/*.*',
         'tsconfig.json'
@@ -38,7 +38,6 @@ module.exports = function (config) {
     proxies: { // avoid Karma's ./base virtual directory
       '/app/': '/base/app/',
       '/jspm_packages/': '/base/jspm_packages/',
-      '/node_modules/': '/base/node_modules/',
       '/typings/': '/base/typings/',
       '/tsconfig.json': '/base/tsconfig.json',
     },

@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "test": "karma start karma.conf.js",
+    "setup": "npm install -g jspm typings karma && npm install && jspm install && typings install",
+    "api": "node api"
   },
   "jspm": {
     "dependencies": {

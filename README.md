@@ -6,19 +6,17 @@ Also included is some jasmine based unit tests, they are run through PhantomJS2.
 ## How to start:
 First start the backend service in a separate process:
 <pre>
-node api
+npm run api
 </pre>
 This will start a simple rest service running on port 80
 <br><br>
 Then run:
 <pre>
-npm install jspm -g
-npm install
-jspm install
+npm run setup
 npm start
 </pre>
 Running tests:
 Run unit tests through phantomjs with the following command:
 <pre>
-karma start karma.conf.js
+npm run test
 </pre>
