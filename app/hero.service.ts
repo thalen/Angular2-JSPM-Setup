@@ -5,8 +5,8 @@ import {Hero} from './hero';
 import {Observable} from 'rxjs/Observable';
 
 import 'rxjs/add/operator/map';
-import 'rxjs/operator/first';
-import 'rxjs/operator/mergeAll';
+import 'rxjs/add/operator/first';
+import 'rxjs/add/operator/mergeAll';
 
 let apiURL = 'http://localhost/api';
 @Injectable()
